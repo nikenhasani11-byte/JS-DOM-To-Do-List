@@ -1,0 +1,274 @@
+* {
+    background-color: #FAD6D3;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FAD6D3;
+    min-height: 100vh;
+    padding: 40px 20px;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 850px;
+    margin: auto;
+}
+
+.main-header {
+    margin-bottom: 15px;
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#judul-utama {
+    font-size: 38px;
+    color: #227e9d;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+#sub-judul {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+.card {
+    background: #96d0d2;
+    width: 100%;
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================
+   TITLE
+========================= */
+.card h2 {
+    text-align: center;
+    background-color:#96d0d2;
+    font-size: 30px;
+    color: #2d3047;
+    margin-bottom: 10px;
+}
+
+.desc {
+    text-align: center;
+    background-color:#96d0d2;
+    color: #fd50a4;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.input-wrapper {
+    display: flex;
+    background-color:#96d0d2;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 35px;
+    border-radius: 12px;
+}
+
+#input-tugas {
+    flex: 1;
+    padding: 14px 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#input-tugas:focus {
+    border-color: #8e7dff;
+    box-shadow: 0 0 0 4px rgba(142, 125, 255, 0.12);
+}
+
+#input-tugas::placeholder {
+    color: #fd50a4;
+}
+
+.btn {
+    border: none;
+    padding: 0 22px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-success {
+    background: #8e7dff;
+    color: white;
+}
+
+.btn-success:hover {
+    background: #7664e8;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(118, 100, 232, 0.3);
+}
+
+.btn-success:active {
+    transform: translateY(0);
+}
+
+.btn-hapus {
+    border: none;
+    background: #ffe1e6;
+    color: #e85d75;
+
+    padding: 8px 15px;
+    border-radius: 20px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-hapus:hover {
+    background: #e85d75;
+    color: white;
+    transform: scale(1.05);
+}
+
+.list-container {
+    background: #96d0d2;
+    padding: 25px;
+}
+
+.list-container h3 {
+    background: #96d0d2;
+    font-size: 21px;
+    color: #2d3047;
+    margin-bottom: 20px;
+}
+    
+.note-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    background: #96d0d2;
+}
+
+.note-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #FAD6D3;
+    font-size: 20px;
+    padding: 15px 18px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    border-left: 5px solid #8e7dff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: 0.3s;
+}
+
+.note-list li:hover {
+    transform: translateX(4px);
+}
+
+
+.empty-state {
+    background: #96d0d2;
+    text-align: center;
+    color: #fd50a4;
+    font-size: 15px;
+    padding: 25px 10px;
+}
+
+#jumlah-tugas {
+    color: #8e7dff;
+}
+
+
+.task-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.checkbox-tugas {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #8e7dff;
+}
+
+.task-item.selesai span {
+    text-decoration: line-through;
+    color: #999;
+    opacity: 0.7;
+}
+
+.statistik {
+    margin-top: 30px;
+}
+
+.statistik h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2d3047;
+}
+
+.statistik-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.stat-card {
+    background: white;
+    padding: 20px;
+    border-radius: 18px;
+    text-align: center;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-3px);
+}
+
+.stat-card h3 {
+    background: white;
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.stat-card p {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.stat-card.total p {
+    background: white;
+    color: #8e7dff;
+}
+
+.stat-card.selesai p {
+    background: white;
+    color: #4caf50;
+}
+
+.stat-card.belum p {
+    background: white;
+    color: #e85d75;
+}
